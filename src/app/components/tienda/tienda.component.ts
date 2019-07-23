@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 
 export class TiendaComponent {
 	public title = 'Curso de Angular 4 avanzado';
+	public nParque: string = 'hola';
+	public objetoParque;
+
+	mostrarNombre() {
+		console.log(this.nParque);
+	}
+	verDatosParque(event) {
+		this.objetoParque = event;
+	}
 }
